@@ -8,7 +8,7 @@ class AniCli < Formula
   depends_on "sed"
   depends_on "curl"
   depends_on "openssl"
-  depends_on "mpv"
+  depends_on "iina"
   
 
   def install
