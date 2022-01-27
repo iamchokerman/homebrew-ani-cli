@@ -5,7 +5,6 @@ class AniCli < Formula
   license "GPL-3.0"
 
   depends_on "grep"
-  depends_on "sed"
   depends_on "curl"
   depends_on "openssl"
   depends_on "iina"
