@@ -14,6 +14,4 @@ class AniCli < Formula
   def install
     bin.install 'ani-cli'
   end
-    system "false"
-  end
 end
