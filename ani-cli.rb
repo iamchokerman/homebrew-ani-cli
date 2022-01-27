@@ -9,6 +9,7 @@ class AniCli < Formula
   depends_on "curl"
   depends_on "openssl"
   depends_on "iina"
+  depends_on "aria2"
   
 
   def install
