@@ -14,6 +14,8 @@ class AniCli < Formula
   depends_on "iina"
 
   def install
+    # Resolve cask dependencies
+    system "/usr/local/bin/brew", "cask", "install", "osxfuse"
     bin.install 'ani-cli'
   end
 end
