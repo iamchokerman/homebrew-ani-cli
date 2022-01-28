@@ -10,10 +10,10 @@ class AniCli < Formula
   depends_on "cask"
   depends_on "mpv"
   depends_on "aria2"
+  depends_on :cask => "iina"
 
   def install
     bin.install 'ani-cli'
       # Resolve cask dependencies
-    system "--cask install iina"
   end
 end
