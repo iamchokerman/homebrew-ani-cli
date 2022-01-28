@@ -11,7 +11,6 @@ class AniCli < Formula
   depends_on "mpv"
   depends_on "aria2"
   depends_on "cask"
-  depends_on "iina"
 
   def install
     # Resolve cask dependencies
