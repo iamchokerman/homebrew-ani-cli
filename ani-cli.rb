@@ -22,5 +22,5 @@ class AniCli < Formula
     #Add the following in your ~/.zshrc or ~/.profile:
      # alias ani-cli='ani-cli -i'
    # EOS
-  end
+ # end
 end
