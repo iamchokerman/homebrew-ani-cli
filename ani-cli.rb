@@ -14,6 +14,7 @@ class AniCli < Formula
   def install
     # Resolve cask dependencies
     system "/usr/local/bin/brew", "install", "--cask", "iina"
+    system "alias ani-cli='ani-cli -i'"
     bin.install 'ani-cli'
   end
 end
