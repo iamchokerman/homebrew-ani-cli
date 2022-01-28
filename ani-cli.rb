@@ -18,6 +18,6 @@ class AniCli < Formula
 
     printf("Add the following in your ~/.zshrc or ~/.profile:")
 
-    printf("alias ani-cli="ani-cli -i"")
+    printf("alias ani-cli='ani-cli -i'")
   end
 end
