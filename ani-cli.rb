@@ -1,5 +1,3 @@
-require "caveats"
-
 class AniCli < Formula
   desc "A cli tool to browse and play anime"
   homepage "https://github.com/pystardust/ani-cli/"
@@ -13,14 +11,6 @@ class AniCli < Formula
   depends_on "aria2"
   depends_on "cask"
   
-def caveats
-  <<~EOS
-    Add the following in your ~/.zshrc or ~/.profile:
-
-      alias ani-cli="ani-cli -i"
-  EOS
-end
-
   def install
     # Resolve cask dependencies
     system "/usr/local/bin/brew", "install", "--cask", "iina"
