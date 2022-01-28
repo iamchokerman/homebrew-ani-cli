@@ -15,11 +15,11 @@ class AniCli < Formula
     # Resolve cask dependencies
     system "/usr/local/bin/brew", "install", "--cask", "iina"
     bin.install 'ani-cli'
-  end
- def caveats
+     def caveats
   <<~EOS
     Add the following in your ~/.zshrc or ~/.profile:
 
       alias ani-cli="ani-cli -i"
   EOS 
+  end
 end
