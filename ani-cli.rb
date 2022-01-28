@@ -15,9 +15,5 @@ class AniCli < Formula
     # Resolve cask dependencies
     system "/usr/local/bin/brew", "install", "--cask", "iina"
     bin.install 'ani-cli'
-
-    printf("Add the following in your ~/.zshrc or ~/.profile:")
-
-    printf("alias ani-cli='ani-cli -i'")
   end
 end
