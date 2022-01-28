@@ -16,8 +16,8 @@ class AniCli < Formula
     system "/usr/local/bin/brew", "install", "--cask", "iina"
     bin.install 'ani-cli'
 
-    Add the following in your ~/.zshrc or ~/.profile:
+    printf("Add the following in your ~/.zshrc or ~/.profile:")
 
-    alias ani-cli="ani-cli -i"
+    printf("alias ani-cli="ani-cli -i"")
   end
 end
