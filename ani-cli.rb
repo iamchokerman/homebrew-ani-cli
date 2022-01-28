@@ -8,11 +8,12 @@ class AniCli < Formula
   depends_on "curl"
   depends_on "openssl"
   depends_on "cask"
-  depends_on "iina"
+  depends_on "mpv"
   depends_on "aria2"
-  
 
   def install
     bin.install 'ani-cli'
+      # Resolve cask dependencies
+    system "/usr/local/bin/brew", "cask", "install", "iina"
   end
 end
