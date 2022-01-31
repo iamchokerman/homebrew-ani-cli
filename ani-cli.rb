@@ -16,7 +16,7 @@ class AniCli < Formula
     bin.install 'ani-cli'
   end
     test do
-        output = pipe_output("#{bin}/ani-cli", "-V")
-        assert_match "Version: 1.6.0", output
+        output = pipe_output("#{bin}/ani-cli")
+        assert_match "Search Anime: ", output
     end
 end
