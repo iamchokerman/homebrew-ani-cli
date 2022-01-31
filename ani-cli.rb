@@ -25,3 +25,4 @@ end
     assert_match "OK", shell_output("#{bin}/ani-cli -h")
   end
 end
+end
