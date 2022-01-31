@@ -8,19 +8,14 @@ class AniCli < Formula
   depends_on "grep"
   depends_on "curl"
   depends_on "openssl"
-  depends_on "cask"
   depends_on "aria2"
   depends_on "mpv"
   
   def install
-    # Resolve cask dependencies
-    # system "/usr/local/bin/brew", "install", "--cask", "iina"
     bin.install 'ani-cli'
   end
-  #def caveats
-   # <<~EOS
-    #Add the following in your ~/.zshrc or ~/.profile:
-     # alias ani-cli='ani-cli -i'
-   # EOS
- # end
+    test do
+   resource("Search Anime: ").stage do
+    assert_match "OK", shell_output("#{bin}/foo build-foo input.foo")
+  end
 end
