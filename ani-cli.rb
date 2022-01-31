@@ -20,8 +20,8 @@ end
     bin.install 'ani-cli'
   end
     test do
-   resource("testdata").stage do
-    assert_match "OK", shell_output("#{bin}/foo build-foo -h")
+    resource("testdata").stage do
+    assert_match "OK", shell_output("#{bin}/ani-cli", "-h")
   end
 end
 end
