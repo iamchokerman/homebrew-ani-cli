@@ -7,7 +7,6 @@ class AniCli < Formula
   
   resource("testdata") do
   url "https://github.com/iamchokerman/homebrew-ani-cli/blob/main/testdata"
-  sha256 ""
 end
 
   uses_from_macos "curl"
@@ -22,7 +21,7 @@ end
   end
     test do
    resource("testdata").stage do
-    assert_match "OK", shell_output("#{bin}/ani-cli -h")
+    assert_match "OK", shell_output("#{bin}/foo build-foo -h")
   end
 end
 end
