@@ -19,4 +19,3 @@ class AniCli < Formula
         system bin/"ani-cli", "-V"
     end
 end
-end
