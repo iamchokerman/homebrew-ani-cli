@@ -11,7 +11,7 @@ class AniCli < Formula
 end
 
   depends_on "grep"
-  depends_on "curl"
+  uses_from_macos "curl"
   depends_on "openssl"
   depends_on "aria2"
   depends_on "mpv"
