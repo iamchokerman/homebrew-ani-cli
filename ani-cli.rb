@@ -22,7 +22,7 @@ end
   end
     test do
     resource("testdata").stage do
-    assert_match "OK", shell_output("#{bin}/foo build-foo input.foo")
+    assert_match "OK", shell_output("#{bin}/ani-cli build-ani-cli input.ani-cli")
     end
 end
 end
