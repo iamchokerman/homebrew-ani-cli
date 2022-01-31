@@ -17,6 +17,6 @@ class AniCli < Formula
   end
     test do
         output = pipe_output("#{bin}/ani-cli")
-        assert_match "Search Anime: ", output
+        assert_match "", output
     end
 end
