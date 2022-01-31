@@ -21,7 +21,7 @@ end
   end
     test do
     resource("testdata").stage do
-    assert_match "OK", shell_output("#{bin}/ani-cli", "-h")
+    assert_match "OK", shell_output("#{bin}/ani-cli -h")
   end
 end
 end
