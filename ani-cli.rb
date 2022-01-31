@@ -10,11 +10,12 @@ class AniCli < Formula
   sha256 ""
 end
 
-  depends_on "grep"
   uses_from_macos "curl"
-  depends_on "openssl"
+  depends_on "grep"
   depends_on "aria2"
   depends_on "mpv"
+  depends_on "openssl@3"
+
   
   def install
     bin.install 'ani-cli'
@@ -23,5 +24,4 @@ end
    resource("testdata").stage do
     assert_match "OK", shell_output("#{bin}/ani-cli -h")
   end
-end
 end
