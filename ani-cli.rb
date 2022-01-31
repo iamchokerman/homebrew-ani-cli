@@ -7,6 +7,7 @@ class AniCli < Formula
   
   resource("testdata") do
   url "https://github.com/iamchokerman/homebrew-ani-cli/blob/main/testdata"
+    sha256 "f2aa410cfc43a2167d0142565577887e59640cd54befa69780d98b912d32cf2b"
 end
 
   uses_from_macos "curl"
