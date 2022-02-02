@@ -9,12 +9,9 @@ class AniCli < Formula
   uses_from_macos "grep"
   depends_on "aria2"
   depends_on "mpv"
-  depends_on "openssl@3"
+  depends_on "openssl"
 
   def install
     bin.install "ani-cli"
   end
-  test do
-    assert_match version.to_s, shell_output("#{bin}/ani-cli -v")
-    end
 end
