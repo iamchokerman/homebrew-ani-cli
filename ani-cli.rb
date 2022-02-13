@@ -9,7 +9,7 @@ class AniCli < Formula
   uses_from_macos "grep"
   depends_on "aria2"
   depends_on "mpv"
-  depends_on "openssl"
+  depends_on "openssl@1.1"
 
   def install
     bin.install "ani-cli"
