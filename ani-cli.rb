@@ -10,6 +10,7 @@ class AniCli < Formula
   depends_on "aria2"
   depends_on "mpv"
   depends_on "openssl@1.1"
+  depends_on "ffmpeg"
 
   def install
     bin.install "ani-cli"
