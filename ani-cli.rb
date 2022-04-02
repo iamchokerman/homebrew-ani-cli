@@ -2,7 +2,7 @@ class AniCli < Formula
   desc "A cli to browse and watch anime. This tool scrapes the site gogoanime."
   homepage "https://github.com/pystardust/ani-cli/"
   url "https://github.com/pystardust/ani-cli/archive/refs/tags/v2.0.tar.gz"
-  sha256 "d01e5acc1961dfb2d1ea4219dcbc8a7b745a1066166216590592d2021aae7736"
+  sha256 "fb27aaa2c2c66a1198e4876e40c0366693e05d91ea66beaaa739b910ff7040b0"
   license "GPL-3.0"
 
   uses_from_macos "curl"
