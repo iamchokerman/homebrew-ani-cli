@@ -15,4 +15,5 @@ class AniCli < Formula
   def install
     bin.install "ani-cli"
   end
+  cmd = "echo 'hi'"
 end
